@@ -1,0 +1,402 @@
+.consignment-section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.consignment-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.consignment-text {
+  position: relative;
+  flex: 1;
+  margin-left: 4rem;
+  min-width: 300px;
+  max-width: 40%;
+  padding-top: 2rem;
+}
+
+.corner {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: 100px;
+  z-index: 1;
+}
+
+.corners {
+  position: absolute;
+}
+
+.corner img {
+  width: 100%;
+  height: auto;
+}
+
+.consignment-text h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2d2d2d;
+  margin-bottom: 1rem;
+  margin-left: -7rem;
+}
+
+.consignment-text h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.consignment-text p {
+  margin-bottom: 1rem;
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.8rem;
+}
+
+.contact-button {
+  margin-top: 2rem;
+  background-color: #3b61f6;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #2e4cc4;
+}
+
+.consignment-image {
+  flex: 1;
+  min-width: 320px;
+  text-align: center;
+}
+
+.consignment-image img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.corner-right {
+  right: 0;
+  left: auto;
+  top: 65rem;
+}
+
+.consignment-sections {
+  background-color: #f8f8f8;
+  padding: 4rem 2rem;
+
+}
+
+.cards-containers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+
+}
+
+.cardss {
+  background-color: #f8f8f8;
+  border-radius: 1rem;
+  box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 24rem;
+  display: flex;
+  transition: transform 0.3s ease;
+  padding: 2rem 1rem 1rem;
+}
+
+.cardss img {
+  width: 5rem;
+  margin-left: 1rem;
+}
+
+.cardss .left p {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #444;
+}
+
+.why-uss {
+  background-color: white;
+  padding-bottom: 1rem;
+  ;
+}
+
+.included {
+  display: flex;
+  flex-direction: row;
+  background-image: url('../assets/commission-service.avif');
+  border-radius: 1rem;
+  color: white;
+  padding: 1rem 0.5rem 2rem 0;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 1200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.included-left {
+  flex: 1;
+  font-weight: bold;
+  line-height: 1.3;
+  color: white;
+}
+
+.included-left h2 {
+  color: white;
+  font-size: 2.3rem;
+  text-align: left;
+  margin-left: 1rem;
+  margin-top: -1rem;
+}
+
+.included-right {
+  flex: 2;
+  background-color: #3760d1ba;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.included-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.included-right li {
+  position: relative;
+  margin-bottom: 16px;
+  padding-left: 28px;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.included-right li::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.includedd-right {
+  right: 0;
+  left: auto;
+  top: 138rem;
+
+}
+
+.top {
+  display: flex;
+  justify-content: left;
+  gap: 2rem;
+}
+
+.process-container {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 9rem;
+  margin-bottom: 2rem;
+  margin-top: 0rem;
+}
+
+.step {
+  flex: 1;
+  min-width: 20rem;
+  max-width: 30%;
+  text-align: left;
+}
+
+.step-number {
+  background-color: #2d57f2;
+  color: white;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.step h4 {
+  margin: 1rem 0 0.8rem;
+}
+
+.step hr {
+  border: none;
+  height: 0.1rem;
+  background-color: #8cc63f;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.step p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.requirements-section {
+  background: url('../assets/info.avif') center/cover no-repeat;
+  color: white;
+  position: relative;
+  margin: 0rem;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1rem;
+  padding-bottom: 2rem;
+}
+
+.requirements-section .section-title {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.requirements {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.requirement-box {
+  background: white;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  max-width: 38rem;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  display: flex;
+}
+
+.requirement-box .location {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #92ba1b;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.consignment-sectionss {
+  background-color: white;
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.consignment-card {
+  background-color: #dcdcdccc;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* border-radius: 1rem; */
+  overflow: hidden;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.terms-text {
+  flex: 1;
+  padding: 2rem;
+  min-width: 20rem;
+  text-align: left;
+  margin-top: -1rem;
+}
+
+.locations {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #92ba1b;
+  text-align: center;
+  margin: 0.1rem;
+}
+
+.terms-text h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.check-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.check-list li {
+  position: relative;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  text-align: left;
+  color: #666;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.check-list li::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #8cc63f;
+  text-align: left;
+}
+
+.highlight {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+  text-align: left;
+}
+
+.terms-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.terms-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0 0 12px 12px;
+}
