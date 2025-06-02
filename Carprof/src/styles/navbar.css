@@ -14,14 +14,20 @@ body {
 .nav {
     background-color: white;
     display: flex;
-    position: sticky; /* Changed from fixed */
-    top: 0; /* Required for sticky to work */
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
     padding: 1rem 2rem;
     width: 100%;
-    height: 5rem;
+    position: sticky;
+    top: 0;
     z-index: 1000;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .nav-logo {
@@ -33,37 +39,44 @@ body {
     color: #444;
     font-weight: 600;
     font-size: 1.2rem;
-    font-weight: 600;
-    font-family: 'roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
+
 #logo {
     width: 2rem;
     height: 2rem;
     margin-right: 0.5rem;
 }
 
+.nav-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    margin-left: 40rem;
+    margin-top: 1rem;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
     align-items: center;
+    gap: 2rem;
 }
 
 .nav-links li {
-    margin: 0 2rem 0rem 0.5rem;
-    letter-spacing: -0.05rem;
+    position: relative;
     font-size: 0.9rem;
     font-weight: 500;
-    position: relative;
 }
+
 a {
     text-decoration: none;
     color: inherit;
 }
 
 .links {
-    text-decoration: none;
     color: #666;
-    font-weight: 505;
+    font-weight: 500;
     transition: color 0.3s ease-in-out, font-weight 0.3s;
     position: relative;
 }
@@ -84,6 +97,39 @@ a {
     border-radius: 2px;
 }
 
-.links:hover::after {
+.links:hover::after,
+.links.active::after {
     width: 100%;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.contact-block {
+    background-color: #f1f1f1;
+    padding: 0.4rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.contact-icon {
+    font-size: 1rem;
+    color: #007BFF;
+}
+.contact{
+     padding: 0.4rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
 }

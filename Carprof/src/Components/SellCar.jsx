@@ -187,7 +187,7 @@ const SellCar = () => {
         <div className="info">
           <div className="contact-box">
             <FaPhoneAlt style={{ color: '#43b3ee' }} />
-            <span>+250 793 399 719</span>
+            <span>+250 799 399 719</span>
           </div>
           <div className="contact-box">
             <IoLogoWhatsapp style={{ color: '#60d669' }} />

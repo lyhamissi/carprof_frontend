@@ -14,12 +14,48 @@ import image5 from '../assets/why-us10.avif';
 import image6 from '../assets/why-us11.avif';
 import image8 from '../assets/why-us13.avif';
 import image9 from '../assets/why-us14.avif';
-import { FaCheckCircle , FaPhoneAlt } from "react-icons/fa";
+import { FaCheckCircle, FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
+import { FaCirclePlus } from "react-icons/fa6";
+import feature1 from '../assets/stories8.avif'
+import feature2 from '../assets/stories9.avif'
+import feature3 from  '../assets/stories10.avif'
+import feature4 from  '../assets/contact-map.avif'
+const faqs = [
+    "How does the consignment sale process work?",
+    "How quickly will I receive payment?",
+    "Can I sell a car that has an active leasing?",
+    "Can I sell a car without an Estonian registration plate?",
+    "Why do customers choose us?",
+    "What services does CarProf offer?"
+];
 
+const features = [
+    {
+        image: feature1,
+        title: '#1 in Estonia',
+        description: 'We are the leader in consignment car sales with an avg 4.9 rating on Google!'
+    },
+    {
+        image: feature2,
+        title: 'Transaction from start to finish',
+        description: 'We take on all stages of selling your car.'
+    },
+    {
+        image: feature3,
+        title: 'Car presentation',
+        description: 'Professional photos and ads for a successful sale.'
+    },
+    {
+        image: feature4,
+        title: 'Wide range of services',
+        description: 'Car preparation, advertising and design.'
+    }
+];
 
 const Consignment = () => {
+
     return (
         <>
             <section className="consignment-section">
@@ -103,14 +139,14 @@ const Consignment = () => {
                     </div>
                     <div className="included-right">
                         <ul>
-                            <li><FaCheckCircle  className='locations'/> Accurate valuation based on market analysis and your car’s unique features.</li>
-                            <li><FaCheckCircle  className='locations'/> Technical inspection and preparation of your car for sale.</li>
-                            <li><FaCheckCircle  className='locations'/> Professional advertising, including high-quality photos and a detailed description.</li>
-                            <li><FaCheckCircle  className='locations'/> Publishing the listing on our website and social media for maximum exposure.</li>
-                            <li><FaCheckCircle  className='locations'/> Additional promotion on popular marketplaces (Auto24.ee, mobile.de, etc.).</li>
-                            <li><FaCheckCircle  className='locations'/> Secure storage of your car at our dealership.</li>
-                            <li><FaCheckCircle  className='locations'/> Arranging test drives for potential buyers.</li>
-                            <li><FaCheckCircle  className='locations'/> Fully supported transaction, starting with the initial contact and ending with the final paperwork.</li>
+                            <li><FaCheckCircle className='locations' /> Accurate valuation based on market analysis and your car’s unique features.</li>
+                            <li><FaCheckCircle className='locations' /> Technical inspection and preparation of your car for sale.</li>
+                            <li><FaCheckCircle className='locations' /> Professional advertising, including high-quality photos and a detailed description.</li>
+                            <li><FaCheckCircle className='locations' /> Publishing the listing on our website and social media for maximum exposure.</li>
+                            <li><FaCheckCircle className='locations' /> Additional promotion on popular marketplaces (Auto24.ee, mobile.de, etc.).</li>
+                            <li><FaCheckCircle className='locations' /> Secure storage of your car at our dealership.</li>
+                            <li><FaCheckCircle className='locations' /> Arranging test drives for potential buyers.</li>
+                            <li><FaCheckCircle className='locations' /> Fully supported transaction, starting with the initial contact and ending with the final paperwork.</li>
                         </ul>
                     </div>
                     <div className="corner includedd-right">
@@ -156,10 +192,10 @@ const Consignment = () => {
                     <h2 className="section-title white">Requirements for Your Car</h2>
                     <div className="requirements">
                         <div className="requirement-box">
-                            <FaCheckCircle  className='location' />Good mechanical and visual condition: bodywork, lights, fluid levels, tires, and battery
+                            <FaCheckCircle className='location' />Good mechanical and visual condition: bodywork, lights, fluid levels, tires, and battery
                         </div>
                         <div className="requirement-box">
-                            <FaCheckCircle  className='location'/> Complete and up-to-date service history including a service book and maintenance receipts
+                            <FaCheckCircle className='location' /> Complete and up-to-date service history including a service book and maintenance receipts
                         </div>
                     </div>
                 </div>
@@ -173,8 +209,8 @@ const Consignment = () => {
                     <div className="terms-text">
                         <h2>Consignment Sales Terms</h2>
                         <ul className="check-list">
-                            <li><FaCheckCircle  className='locations'/>Consignment fee: from 1500 € (included 22% VAT).</li>
-                            <li><FaCheckCircle  className='locations'/>You can also sell your leased car with us.</li>
+                            <li><FaCheckCircle className='locations' />Consignment fee: from 1500 € (included 22% VAT).</li>
+                            <li><FaCheckCircle className='locations' />You can also sell your leased car with us.</li>
                         </ul>
                         <p className="highlight">
                             At CarProf, we guarantee a fast, hassle-free, and secure sales process.
@@ -186,38 +222,65 @@ const Consignment = () => {
                     </div>
                 </div>
             </div>
-                  <div className="support">
-                    <div className="lined-text">
-                      <h2>If you have any questions, please contact us!</h2>
+            <section className="faq-section">
+                <h2 className="faq-title">Frequently Asked Questions</h2>
+                <div className="faq-grid">
+                    {faqs.map((q, i) => (
+                        <div className="faq-item" key={i}>
+                            <p className="faq-question">{q}</p>
+                            <span className="faq-icon"><FaCirclePlus /></span>
+                        </div>
+                    ))}
+                </div>
+                <div className="corner faq-right">
+                    <img src={corner2} alt="Corner Design" />
+                </div>
+            </section>
+            <section className="features-section">
+                <div className="features-grid">
+                    {features.map((item, index) => (
+                        <div className="feature-card" key={index}>
+                            <img src={item.image} alt={item.title} className="feature-image" />
+                            <div className="feature-overlay">
+                                <h3 className="feature-title">{item.title}</h3>
+                                <p className="feature-description">{item.description}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </section>
+            <div className="support">
+                <div className="lined-text">
+                    <h2>If you have any questions, please contact us!</h2>
+                </div>
+
+                <div className="info">
+                    <div className="contact-box">
+                        <FaPhoneAlt style={{ color: '#43b3ee' }} />
+                        <span>+250 799 399 719</span>
                     </div>
-            
-                    <div className="info">
-                      <div className="contact-box">
-                        <FaPhoneAlt  style={{color: '#43b3ee'}}/>
-                        <span>+250 793 399 719</span>
-                      </div>
-                      <div className="contact-box">
-                        <IoLogoWhatsapp style={{color: '#60d669'}} />
+                    <div className="contact-box">
+                        <IoLogoWhatsapp style={{ color: '#60d669' }} />
                         <span>WhatsApp</span>
-                      </div>
-                      <div className="contact-box">
-                        <MdEmail style={{color:'#2aabee'}} />
-                        <span>carprof.ee@gmail.com</span>
-                      </div>
                     </div>
-                  </div>
-                  <div className="map-container">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31900.391845095004!2d30.10117230000001!3d-1.9325530000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca6a40203f041%3A0x5f8434259d8c4393!2sKacyiru%2C%20Kigali!5e0!3m2!1sen!2srw!4v1747729408561!5m2!1sen!2srw"
-                      width="100%"
-                      height="450"
-                      style={{ border: 0, borderRadius: '1rem' }}
-                      allowFullScreen=""
-                      loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade"
-                      title="Our location"
-                    ></iframe>
-                  </div>
+                    <div className="contact-box">
+                        <MdEmail style={{ color: '#2aabee' }} />
+                        <span>carprof.ee@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div className="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31900.391845095004!2d30.10117230000001!3d-1.9325530000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca6a40203f041%3A0x5f8434259d8c4393!2sKacyiru%2C%20Kigali!5e0!3m2!1sen!2srw!4v1747729408561!5m2!1sen!2srw"
+                    width="100%"
+                    height="450"
+                    style={{ border: 0, borderRadius: '1rem' }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Our location"
+                ></iframe>
+            </div>
         </>
     );
 };
