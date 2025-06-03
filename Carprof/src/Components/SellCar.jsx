@@ -186,22 +186,30 @@ const SellCar = () => {
 
         <div className="info">
           <div className="contact-box">
-            <FaPhoneAlt style={{ color: '#43b3ee' }} />
-            <span>+250 799 399 719</span>
+            <a href="tel:+250799399719">
+              <FaPhoneAlt style={{ color: '#43b3ee', marginRight: '8px' }} />
+              <span>+250 799 399 719</span>
+            </a>
           </div>
+
           <div className="contact-box">
-            <IoLogoWhatsapp style={{ color: '#60d669' }} />
-            <span>WhatsApp</span>
+            <a href="https://wa.me/250799399719"  >
+              <IoLogoWhatsapp style={{ color: '#60d669', marginRight: '8px' }} />
+              <span>WhatsApp</span>
+            </a>
           </div>
+
           <div className="contact-box">
-            <MdEmail style={{ color: '#2aabee' }} />
-            <span>carprof.ee@gmail.com</span>
+            <a href="mailto:carprof.ee@gmail.com">
+              <MdEmail style={{ color: '#2aabee', marginRight: '8px' }} />
+              <span>carprof.ee@gmail.com</span>
+            </a>
           </div>
         </div>
       </div>
       <div className="map-container">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31900.391845095004!2d30.10117230000001!3d-1.9325530000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca6a40203f041%3A0x5f8434259d8c4393!2sKacyiru%2C%20Kigali!5e0!3m2!1sen!2srw!4v1747729408561!5m2!1sen!2srw"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14554.895076829136!2d24.839199863822053!3d59.43343680233419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692ecbc94c45ce9%3A0x57f9fc4815317cae!2sPeterburi%20tee%2069!5e0!3m2!1sen!2srw!4v1748888840482!5m2!1sen!2srw"
           width="100%"
           height="450"
           style={{ border: 0, borderRadius: '1rem' }}
