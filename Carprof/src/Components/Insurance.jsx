@@ -181,9 +181,16 @@ const Insurance = () => {
             <p>We will assess the damage, manage the necessary paperwork, and handle the repairs, saving you the hassle.</p>
           </div>
         </div>
-        <div className="report">
-          <img src={report} alt="" className='report' />
+        <div className="report-overlay">
+          <img src={report} alt="Accident Report" className="report-image" />
+          <div className="overlay-content">
+            <h2>Accident Report Form</h2>
+            <p>Download the accident notification form on our website.</p>
+            <a href="https://www.lkf.ee/sites/default/files/Teade_liiklusonnetusest_2015_A4.pdf" className="report-button">Download the form</a>
+          </div>
         </div>
+
+
       </div>
       <div className="support">
         <div className="lined-text">

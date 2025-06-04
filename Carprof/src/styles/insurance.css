@@ -176,3 +176,54 @@ body{
 .stepss .step p{
     font-size: 0.7rem;
 }
+.report-overlay {
+  position: relative;
+  width: 100%;
+  max-width: 88%;
+  margin: auto;
+  padding: 3rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.report-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  color: white;
+  max-width: 25%;
+  text-align: left;
+  padding: 1rem;
+}
+
+.overlay-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
+  text-align: left;
+}
+
+.overlay-content p {
+  margin-bottom: 1.2rem;
+}
+
+.report-button {
+  display: inline-block;
+  background-color: white;
+  color: #3366ff;
+  font-weight: bold;
+  padding: 0.7rem 1.3rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.report-button:hover {
+  background-color: #e6e6ff;
+}
