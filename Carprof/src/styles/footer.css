@@ -69,6 +69,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  /* display: block;  */
 }
 
 .footer-section.right a {
@@ -84,4 +85,27 @@
 
 .footer-section.right a.active {
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .footer-section.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section.right,
+  .footer-section.center {
+    display: none;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
 }

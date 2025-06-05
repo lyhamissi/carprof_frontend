@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactCompareImage from 'react-compare-image';
 import { FaPhoneAlt } from 'react-icons/fa'
 import { IoLogoWhatsapp } from 'react-icons/io'
 import { MdEmail } from 'react-icons/md'
@@ -19,6 +20,11 @@ import image3 from '../assets/why-us11.avif'
 import image4 from '../assets/why-us17.avif'
 import image5 from '../assets/why-us10.avif'
 import report from '../assets/blank-accident.avif'
+import before1 from '../assets/comparison4.avif';
+import after1 from '../assets/comparison3.avif';
+import before2 from '../assets/comparison6.avif';
+import after2 from '../assets/comparison5.avif';
+import gallery from '../assets/gallery13.avif';
 const Insurance = () => {
   return (
     <div className="insurance-container">
@@ -191,6 +197,17 @@ const Insurance = () => {
         </div>
 
 
+      </div>
+      <div className="gallery">
+        <img src={gallery} alt="" />
+        <div className="before">
+          <img src={before1} alt="" />
+          <img src={after1} alt="" />
+        </div>
+        <div className="after">
+          <img src={before2} alt="" />
+          <img src={after2} alt="" />
+        </div>
       </div>
       <div className="support">
         <div className="lined-text">
